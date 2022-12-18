@@ -33,6 +33,6 @@ jobs:
       run: |
         git config --global user.name 'lassipau'
         git config --global user.email 'lassipau@users.noreply.github.com'
-        git add dps-jobs/*
+        git add dps-jobs/
         git commit -m "Automatic generation"
         git push
