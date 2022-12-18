@@ -2,9 +2,9 @@ name: Generate the HTML files
 
 on:
   push:
-    branches: [main]
+    branches: [main] # Automatically generate the html files when the database file is updated.
   schedule:
-    - cron: '01 00 * * *'
+    - cron: '01 00 * * 1' # Update the "past vs. present" jobs every Monday
 
 jobs:
   report:
