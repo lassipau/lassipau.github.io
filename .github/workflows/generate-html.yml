@@ -28,6 +28,7 @@ jobs:
       run: |
         cd dps-jobs/
         python generateHTML.py
+        git status
         
     - name: Commit the HTML file
       run: |
