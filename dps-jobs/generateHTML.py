@@ -95,8 +95,6 @@ def write_all_positions(conn,f):
     today = str(date.today())
     # today = '2022-11-01' # For debugging  
 
-    f.write("<h2>[UNDER CONSTRUCTION - TESTING PHASE]</h2>\n\n")
-
     f.write("<h2>Open Positions</h2>\n\n")
 
     cur.execute("SELECT * FROM positions WHERE DeadlineDate >= '%s' ORDER BY PosID DESC" % today)
