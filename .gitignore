@@ -1,3 +1,4 @@
 dps-jobs/add-job.sh
 
 *.swp
+.DS_Store
