@@ -1,8 +1,8 @@
 #!/bin/sh
 
-# sync the updated DPS-jobs database to github
+# sync the updated Semigroup-jobs database to github
 
 git pull
-git add dps-jobs.db
+git add semigroup-jobs.db
 git commit -m "Added a job"
 git push
