@@ -60,7 +60,7 @@ def write_position_html(row,f):
     #f.write("Type: " + row[0] +" <br>\n")
     #f.write("University: " + row[1] +" <br>\n")
 
-    f.write("<b>ID:</b> DPS-Job-%s<br>\n" % row[11]) 
+    f.write("<b>ID:</b> Semigroup-Job-%s<br>\n" % row[11]) 
     f.write("<b>Position:</b> %s <br>\n" % row[0])
     f.write("<b>University:</b> <a href=\"%s\">%s</a><br>\n" % (row[2],row[1]))
     f.write("<b>Department:</b> <a href=\"%s\">%s</a><br>\n" % (row[4],row[3]))
