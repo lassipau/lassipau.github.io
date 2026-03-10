@@ -172,6 +172,27 @@
   footer a { color: var(--accent); text-decoration: none; }
   footer a:hover { text-decoration: underline; }
 
+  /* ABSTRACT TOGGLE */
+  .abstract-toggle {
+    display: inline-flex; align-items: center; gap: 5px;
+    margin-top: 7px; font-size: 12.5px; font-weight: 500;
+    color: var(--accent); background: none; border: none;
+    cursor: pointer; padding: 0; font-family: inherit;
+    letter-spacing: .01em;
+  }
+  .abstract-toggle:hover { text-decoration: underline; }
+  .abstract-toggle .toggle-arrow {
+    display: inline-block; transition: transform .2s ease; font-style: normal;
+  }
+  .abstract-toggle.open .toggle-arrow { transform: rotate(90deg); }
+  .abstract-body {
+    display: none; margin-top: 10px; padding: 12px 14px;
+    background: var(--bg-soft); border-left: 3px solid var(--border-strong);
+    border-radius: 0 6px 6px 0;
+    font-size: 13.5px; color: var(--text-2); line-height: 1.65;
+  }
+  .abstract-body.open { display: block; }
+
   @media (max-width: 700px) {
     nav { padding: 0 16px; }
     .hero, section { padding-left: 20px; padding-right: 20px; }
@@ -333,6 +354,8 @@
         <div class="sched-title">Backstepping Techniques for PDE Control: From Fundamentals to Open Problems</div>
         <div class="sched-speaker">Federico Bribiesca-Argomedo</div>
         <div class="sched-affil">INSA Lyon, France</div>
+        <button class="abstract-toggle" onclick="toggleAbstract(this)"><i class="toggle-arrow">▶</i> Abstract</button>
+        <div class="abstract-body">Backstepping has emerged as a powerful systematic design technique for control and observation of systems modeled by linear partial differential equations (PDEs), offering constructive procedures for stabilization and state estimation even for complex distributed parameter systems. This talk presents an overview of infinite-dimensional backstepping, beginning with a general introduction to the main technical principles of the method. This introduction is addressed to control engineers who might not be completely familiar with the approach yet have some background on PDE models. The presentation will then showcase select applications that demonstrate the versatility of backstepping, ranging from boundary control of parabolic and hyperbolic PDEs to output-feedback design for coupled PDE systems, with emphasis on problems that require adaptations of the basic framework, such as handling in-domain actuation, time-varying coefficients, or coupled systems. Finally, active research directions and open problems will be discussed, highlighting opportunities for future contributions in this area.</div>
       </div>
     </div>
     <div class="sched-row">
@@ -341,6 +364,8 @@
         <div class="sched-title">Systematic Design of Backstepping Controllers and Observers for Distributed Parameter Systems</div>
         <div class="sched-speaker">Nicole Gehring</div>
         <div class="sched-affil">OvGU Magdeburg, Germany</div>
+        <button class="abstract-toggle" onclick="toggleAbstract(this)"><i class="toggle-arrow">▶</i> Abstract</button>
+        <div class="abstract-body">Distributed-parameter systems (DPSs) describe dynamical processes in which the state not only varies in time but also depends on at least one spatial variable. Such models naturally arise in flexible structures, heat conduction problems, and wave-like processes, for example. DPSs typically involve partial differential equations (PDEs) of hyperbolic or parabolic type. One popular approach to controlling these systems via a boundary actuator is the backstepping design. This approach uses state transformations to map the dynamics into a form that simplifies the control design. However, the choice of these transformations is not obvious for more complex DPSs, such as those where PDEs are interconnected with ordinary differential equations (ODEs), which may model actuator or sensor dynamics. Here, a multi-step backstepping design is suggested that makes use of the system's inherent structure. For that, stabilizing state feedback controllers are derived by exploiting the strict-feedback form of interconnected models involving hyperbolic and/or parabolic PDEs, as well as ODEs. Using the principle of duality, the strict-feedforward form enables the successive design of observers that provide state estimates based solely on boundary measurements. Combining state feedback and estimation yields implementable output feedback controllers. Ultimately, the systematic design strategies extend the applicability of backstepping to a significantly larger class of systems.</div>
       </div>
     </div>
     <div class="sched-row"><div class="sched-time">10:00–10:30</div><div class="sched-content muted">☕ Coffee Break</div></div>
@@ -350,6 +375,8 @@
         <div class="sched-title">Distributed Port-Hamiltonian Systems for Modeling, Simulation and Control</div>
         <div class="sched-speaker">Hector Ramirez</div>
         <div class="sched-affil">UTFSM Valparaíso, Chile</div>
+        <button class="abstract-toggle" onclick="toggleAbstract(this)"><i class="toggle-arrow">▶</i> Abstract</button>
+        <div class="abstract-body">Port-Hamiltonian systems (PHS) provide a geometric and energy-based framework for modeling, analysis, and control of multi-physical systems interacting with their environment. Originally formulated for finite-dimensional mechanical and electrical systems, the PHS paradigm has been systematically generalized over the last two decades to distributed parameter systems governed by partial differential equations. These extensions naturally preserve key physical principles—including power balance, passivity, and thermodynamic consistency—and enable modular representations of heterogeneous multi-domain interactions. This tutorial-style presentation will introduce the fundamental constructions of Port-Hamiltonian systems for distributed parameter models, covering their differential-geometric structure, boundary control and observation concepts, and interconnection mechanisms. Recent developments addressing irreversible thermodynamic systems, structure-preserving discretization, and model reduction will also be discussed. Throughout the talk, examples from smart materials, fluid-structure interactions, energy conversion, and micro-mechatronic systems will illustrate how PHS methodologies support advanced control design and analysis for complex distributed systems. The aim of the presentation is to provide attendees with both a conceptual overview and practical insight into the role of Port-Hamiltonian modeling as a unifying framework within modern control of distributed parameter systems.</div>
       </div>
     </div>
     <div class="sched-row">
@@ -358,6 +385,8 @@
         <div class="sched-title">Model Predictive Control of Discrete-time Linear Port-Hamiltonian Boundary Control Systems</div>
         <div class="sched-speaker">Alessandro Macchelli</div>
         <div class="sched-affil">University of Bologna, Italy</div>
+        <button class="abstract-toggle" onclick="toggleAbstract(this)"><i class="toggle-arrow">▶</i> Abstract</button>
+        <div class="abstract-body">This contribution presents a general framework for designing model predictive control (MPC) laws for linear boundary control systems represented in port-Hamiltonian form. The framework relies on a discrete-time approximation of the system dynamics, which is achieved through time discretization alone. This approach maintains the "distributed nature" of the state variables. The resulting discrete-time system is well-posed, meaning that the "next" state is always defined, and it retains the passivity of the original system. By utilizing this well-posedness, we demonstrate that the MPC algorithm can be framed as a Quadratically-Constrained Quadratic Programming (QCQP) problem, where the design variables are represented as vectors. Moreover, the property of passivity enables us to prove that the proposed MPC methodology guarantees asymptotic convergence to the equilibrium in the nominal discrete-time scenario.</div>
       </div>
     </div>
     <div class="sched-row">
@@ -366,6 +395,8 @@
         <div class="sched-title">Digital Model Predictive Control for Linear Distributed Parameter Systems</div>
         <div class="sched-speaker">Jukka-Pekka Humaloja</div>
         <div class="sched-affil">Technical University of Crete, Greece</div>
+        <button class="abstract-toggle" onclick="toggleAbstract(this)"><i class="toggle-arrow">▶</i> Abstract</button>
+        <div class="abstract-body">The talk provides insights on optimal control of linear DPS using discrete-time model predictive control (MPC). The Cayley transform is introduced as a time discretization scheme and utilized to approximately solve continuous-time linear-quadratic optimal control problems with discrete-time controls, which are obtained by solving a discrete-time MPC problem. Tutorial aspects will be provided on applying the methodology to boundary-controlled linear partial differential equations through the abstract framework of boundary control systems.</div>
       </div>
     </div>
     <div class="sched-row"><div class="sched-time">12:00–14:00</div><div class="sched-content muted">🍽 Lunch Break</div></div>
@@ -379,6 +410,8 @@
         <div class="sched-title">IOS Superposition Theorem for Infinite-Dimensional Systems</div>
         <div class="sched-speaker">Andrii Mironchenko</div>
         <div class="sched-affil">University of Bayreuth, Germany</div>
+        <button class="abstract-toggle" onclick="toggleAbstract(this)"><i class="toggle-arrow">▶</i> Abstract</button>
+        <div class="abstract-body">Input-to-output stability (IOS) combines the uniform global asymptotic stability of the output dynamics with its robustness with respect to external inputs. It generalizes the input-to-state stability and is a key concept for analysis and control of systems with outputs. We provide a superposition theorem for IOS of a broad class of nonlinear infinite-dimensional systems with outputs. We introduce and analyze several novel stability and attractivity concepts for infinite-dimensional systems with outputs, such as criteria for the uniform limit property for systems with outputs, several of which are new already for systems with full-state output. Moreover, we provide superposition theorems for systems which satisfy both the output-Lagrange stability property (OL) and IOS. Besides the challenges encountered in the classical infinite-dimensional theory, we discuss by means of counterexamples the complexities arising due to the mismatch between the dynamics of the state and of the output dynamics of the system.</div>
       </div>
     </div>
     <div class="sched-row">
@@ -387,6 +420,8 @@
         <div class="sched-title">Neural Operator Learning for Nonlinear Delay Systems and PDE Control</div>
         <div class="sched-speaker">Yuanyuan Shi</div>
         <div class="sched-affil">UC San Diego, USA</div>
+        <button class="abstract-toggle" onclick="toggleAbstract(this)"><i class="toggle-arrow">▶</i> Abstract</button>
+        <div class="abstract-body">In this talk, we present a novel set of tools and methodologies on physics-informed Neural Operator Control (NOC) for ODE and PDE governed systems. Specifically, we will present NOC for predictor feedback in nonlinear delay systems, and NOC for PDE backstepping control. The first part of the talk is about NOC for predictor feedback in nonlinear delay systems. Predictor feedback is effective for delay compensation, yet a critical challenge lies on efficient computation of the predictor operator. We introduce NOC for approximating the nonlinear predictor mapping and prove semiglobal practical stability (dependent on the learning error) of the proposed NOC predictor feedback via back-stepping transformation. The second part of the talk is about NOC for PDE control. Model-based methods such as PDE backstepping offer provable guarantees for control but are often computationally prohibitive for real-time implementation. We propose a NOC framework that approximates the mapping from functional coefficients to control gains with desired accuracy. Using neural operator-approximated backstepping gains, we show that our method can accelerate PDE control by up to three orders of magnitude while retaining stability guarantees.</div>
       </div>
     </div>
     <div class="sched-row"><div class="sched-time">15:00–15:30</div><div class="sched-content muted">☕ Coffee Break</div></div>
@@ -396,6 +431,8 @@
         <div class="sched-title">Data-Driven Reduced-Order Control of PDE Systems Using DMDc</div>
         <div class="sched-speaker">Gustavo Artur de Andrade</div>
         <div class="sched-affil">UFSC Florianópolis, Brazil</div>
+        <button class="abstract-toggle" onclick="toggleAbstract(this)"><i class="toggle-arrow">▶</i> Abstract</button>
+        <div class="abstract-body">The stabilization of systems governed by partial differential equations (PDEs) traditionally depends on analytical models or computationally intensive numerical solvers, limiting the feasibility of real-time control. Data-driven identification provides an appealing alternative by constructing reduced-order models (ROMs) directly from measured input–output data. In this presentation, we show how Dynamic Mode Decomposition with control (DMDc) can be used to learn efficient ROMs that capture the dominant dynamics of general PDE systems. These ROMs are incorporated into boundary or distributed-feedback control laws allowing controller computation without solving PDEs online. A key feature of the approach is the use of explicit error bounds between the ROM and the original infinite-dimensional PDE, which are embedded into the control design to guarantee robustness margins and prevent spillover effects arising from neglected high-frequency modes. A Lyapunov-based analysis ensures that, when the DMDc model is identified from sufficiently informative data, the ROM-based controller stabilizes the full PDE despite approximation errors. Numerical results demonstrate that the data-driven controller achieves performance comparable to PDE-based designs while enabling fast, real-time implementation.</div>
       </div>
     </div>
     <div class="sched-row">
@@ -404,6 +441,8 @@
         <div class="sched-title">Cooperative Encirclement Control of DPS Agents via Optimization and Finite-Time Backstepping</div>
         <div class="sched-speaker">Shu-Xia Tang</div>
         <div class="sched-affil">Texas Tech University, USA</div>
+        <button class="abstract-toggle" onclick="toggleAbstract(this)"><i class="toggle-arrow">▶</i> Abstract</button>
+        <div class="abstract-body"><em style="color:var(--text-3)">Abstract to be provided by the speaker.</em></div>
       </div>
     </div>
     <div class="sched-row"><div class="sched-time">16:30–17:00</div><div class="sched-content muted">🗣 Panel Discussion — All Speakers</div></div>
@@ -479,3 +518,16 @@
 <footer>
   <p>Workshop on Recent Trends in Control and Estimation of Distributed Parameter Systems &nbsp;·&nbsp; <a href="https://ecc26.euca-ecc.org/workshops/" target="_blank">ECC 2026</a> &nbsp;·&nbsp; University of Iceland, Reykjavík · July 7, 2026<br>
   Contact: <a href="/cdn-cgi/l/email-protection#2947404a4645485a074c5a59405d404804414650465a695c47405f04454045454c074f5b"><span class="
+__cfEmail__" data-cfemail="2947404a4645485a074c5a59405d404804414650465a695c47405f04454045454c074f5b">[email protected]</span></a></p>
+</footer>
+
+<script>
+  function toggleAbstract(btn) {
+    const body = btn.nextElementSibling;
+    const isOpen = body.classList.contains('open');
+    body.classList.toggle('open', !isOpen);
+    btn.classList.toggle('open', !isOpen);
+  }
+</script>
+</body>
+</html>
