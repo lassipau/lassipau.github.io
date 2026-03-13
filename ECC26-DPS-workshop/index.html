@@ -29,7 +29,7 @@
     font-family: 'Inter', sans-serif;
     background: var(--bg);
     color: var(--text);
-    font-size: 17px;
+    font-size: 19px;
     line-height: 1.65;
     -webkit-font-smoothing: antialiased;
   }
@@ -47,11 +47,11 @@
   }
   .nav-brand {
     font-family: 'EB Garamond', serif;
-    font-size: 19px; color: var(--text);
+    font-size: 21px; color: var(--text);
     text-decoration: none; margin-right: auto; white-space: nowrap;
   }
   nav a.nav-link {
-    font-size: 14px; color: var(--text-2);
+    font-size: 16px; color: var(--text-2);
     text-decoration: none; padding: 6px 12px;
     border-radius: 5px; transition: background .15s, color .15s; white-space: nowrap;
   }
@@ -64,38 +64,38 @@
   .hero-conf {
     display: inline-flex; align-items: center; gap: 8px;
     background: var(--accent-bg); border: 1px solid #c3d8f5;
-    color: var(--accent); font-size: 12.5px; font-weight: 500;
+    color: var(--accent); font-size: 14.5px; font-weight: 500;
     padding: 5px 14px; border-radius: 999px; margin-bottom: 24px; letter-spacing: .01em;
   }
   .hero h1 {
-    font-family: 'EB Garamond', serif; font-size: clamp(30px, 4vw, 46px);
+    font-family: 'EB Garamond', serif; font-size: clamp(32.0px, 4vw, 48.0px);
     font-weight: 400; line-height: 1.2; color: var(--text);
     max-width: 760px; margin: 0 auto 16px;
   }
   .hero h1 em { font-style: italic; color: var(--accent); }
-  .hero-sub { font-size: 17px; color: var(--text-2); max-width: 580px; margin: 0 auto 28px; }
+  .hero-sub { font-size: 19px; color: var(--text-2); max-width: 580px; margin: 0 auto 28px; }
   .hero-meta { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-bottom: 32px; }
   .hero-chip {
     display: flex; align-items: center; gap: 6px;
     background: var(--bg); border: 1px solid var(--border-strong);
-    color: var(--text-2); font-size: 14px; padding: 5px 13px; border-radius: 6px;
+    color: var(--text-2); font-size: 16px; padding: 5px 13px; border-radius: 6px;
   }
   .hero-tags { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; }
-  .tag { background: var(--tag-bg); color: var(--tag-text); font-size: 13px; padding: 3px 11px; border-radius: 999px; border: 1px solid var(--border); }
+  .tag { background: var(--tag-bg); color: var(--tag-text); font-size: 15px; padding: 3px 11px; border-radius: 999px; border: 1px solid var(--border); }
 
   /* SECTIONS */
   section { max-width: 860px; margin: 0 auto; padding: 64px 40px; }
   section + section { padding-top: 0; }
   .section-divider { border: none; border-top: 1px solid var(--border); max-width: 860px; margin: 0 auto; }
-  h2 { font-family: 'EB Garamond', serif; font-size: 32px; font-weight: 400; color: var(--text); margin-bottom: 20px; line-height: 1.2; }
-  h3 { font-size: 16px; font-weight: 600; color: var(--text); margin-bottom: 8px; }
+  h2 { font-family: 'EB Garamond', serif; font-size: 34px; font-weight: 400; color: var(--text); margin-bottom: 20px; line-height: 1.2; }
+  h3 { font-size: 18px; font-weight: 600; color: var(--text); margin-bottom: 8px; }
   p { color: var(--text-2); margin-bottom: 14px; }
   p:last-child { margin-bottom: 0; }
 
   /* NOTICE */
   .notice {
     background: var(--green-bg); border: 1px solid #b5ddc5; border-left: 3px solid var(--green);
-    border-radius: 6px; padding: 14px 18px; font-size: 15px; color: var(--green);
+    border-radius: 6px; padding: 14px 18px; font-size: 17px; color: var(--green);
     margin-bottom: 28px; display: flex; gap: 10px; align-items: flex-start; line-height: 1.5;
   }
 
@@ -103,30 +103,30 @@
   .theme-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 28px; }
   .theme-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 20px; }
   .theme-num {
-    font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 500;
+    font-family: 'JetBrains Mono', monospace; font-size: 13px; font-weight: 500;
     color: var(--accent); background: var(--accent-bg); padding: 2px 8px;
     border-radius: 4px; display: inline-block; margin-bottom: 10px;
   }
-  .theme-card h3 { font-size: 15px; margin-bottom: 6px; }
-  .theme-card p { font-size: 14px; color: var(--text-3); margin: 0; }
+  .theme-card h3 { font-size: 17px; margin-bottom: 6px; }
+  .theme-card p { font-size: 16px; color: var(--text-3); margin: 0; }
 
   /* SCHEDULE */
   .schedule-session { margin-bottom: 32px; }
   .session-label {
-    font-size: 11px; font-weight: 600; text-transform: uppercase;
+    font-size: 13px; font-weight: 600; text-transform: uppercase;
     letter-spacing: .08em; color: var(--text-3); margin-bottom: 10px;
     padding-bottom: 8px; border-bottom: 1px solid var(--border);
   }
   .sched-row { display: grid; grid-template-columns: 108px 1fr; border-bottom: 1px solid var(--border); }
   .sched-row:last-child { border-bottom: none; }
-  .sched-time { padding: 13px 16px 13px 0; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: var(--text-3); line-height: 1.4; }
+  .sched-time { padding: 13px 16px 13px 0; font-family: 'JetBrains Mono', monospace; font-size: 15px; color: var(--text-3); line-height: 1.4; }
   .sched-content { padding: 13px 0 13px 20px; border-left: 1px solid var(--border); }
-  .sched-content.muted { font-size: 14px; color: var(--text-3); font-style: italic; display: flex; align-items: center; gap: 6px; }
-  .sched-title { font-size: 15px; font-weight: 500; color: var(--text); margin-bottom: 2px; line-height: 1.4; }
-  .sched-speaker { font-size: 14px; color: var(--accent); margin-bottom: 3px; }
-  .sched-affil { font-size: 13px; color: var(--text-3); }
+  .sched-content.muted { font-size: 16px; color: var(--text-3); font-style: italic; display: flex; align-items: center; gap: 6px; }
+  .sched-title { font-size: 17px; font-weight: 500; color: var(--text); margin-bottom: 2px; line-height: 1.4; }
+  .sched-speaker { font-size: 16px; color: var(--accent); margin-bottom: 3px; }
+  .sched-affil { font-size: 15px; color: var(--text-3); }
   .pills { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 6px; }
-  .pill { font-size: 11px; padding: 2px 8px; border-radius: 999px; border: 1px solid; }
+  .pill { font-size: 13px; padding: 2px 8px; border-radius: 999px; border: 1px solid; }
   .p-bs  { color: #6941c6; background: #f9f5ff; border-color: #d9c7f7; }
   .p-ph  { color: var(--accent); background: var(--accent-bg); border-color: #c3d8f5; }
   .p-mpc { color: #b45309; background: #fffbeb; border-color: #f5d98c; }
@@ -137,23 +137,23 @@
   .speakers-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 4px; }
   .speaker-card { border: 1px solid var(--border); border-radius: 8px; padding: 18px; background: var(--bg-card); transition: border-color .2s; }
   .speaker-card:hover { border-color: var(--border-strong); }
-  .s-avatar { width: 44px; height: 44px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 600; color: #fff; margin-bottom: 12px; }
-  .s-name { font-size: 15px; font-weight: 600; margin-bottom: 2px; }
-  .s-inst { font-size: 13px; color: var(--text-3); margin-bottom: 8px; line-height: 1.4; }
-  .s-topic { font-size: 13px; color: var(--text-2); font-style: italic; line-height: 1.4; }
+  .s-avatar { width: 44px; height: 44px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 600; color: #fff; margin-bottom: 12px; }
+  .s-name { font-size: 17px; font-weight: 600; margin-bottom: 2px; }
+  .s-inst { font-size: 15px; color: var(--text-3); margin-bottom: 8px; line-height: 1.4; }
+  .s-topic { font-size: 15px; color: var(--text-2); font-style: italic; line-height: 1.4; }
 
   /* ORGANIZERS */
   .org-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 4px; }
   .org-card { border: 1px solid var(--border); border-radius: 8px; padding: 20px; background: var(--bg-card); }
-  .o-avatar { width: 48px; height: 48px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 600; color: #fff; margin-bottom: 12px; }
-  .o-name { font-size: 16px; font-weight: 600; margin-bottom: 2px; }
-  .o-role { font-size: 13px; color: var(--accent); font-weight: 500; margin-bottom: 6px; }
-  .o-inst { font-size: 13px; color: var(--text-3); line-height: 1.5; margin-bottom: 10px; }
-  .o-email { font-size: 13px; font-family: 'JetBrains Mono', monospace; color: var(--accent); text-decoration: none; word-break: break-all; display: block; }
+  .o-avatar { width: 48px; height: 48px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 18px; font-weight: 600; color: #fff; margin-bottom: 12px; }
+  .o-name { font-size: 18px; font-weight: 600; margin-bottom: 2px; }
+  .o-role { font-size: 15px; color: var(--accent); font-weight: 500; margin-bottom: 6px; }
+  .o-inst { font-size: 15px; color: var(--text-3); line-height: 1.5; margin-bottom: 10px; }
+  .o-email { font-size: 15px; font-family: 'JetBrains Mono', monospace; color: var(--accent); text-decoration: none; word-break: break-all; display: block; }
   .o-email:hover { text-decoration: underline; }
-  .o-bio { font-size: 13.5px; color: var(--text-3); line-height: 1.6; margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--border); }
+  .o-bio { font-size: 15.5px; color: var(--text-3); line-height: 1.6; margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--border); }
 
-  .s-link { font-size: 13px; color: var(--accent); text-decoration: none; display: inline-block; margin-top: 6px; }
+  .s-link { font-size: 15px; color: var(--accent); text-decoration: none; display: inline-block; margin-top: 6px; }
   .s-link:hover { text-decoration: underline; }
   .o-photo { width: 64px; height: 64px; border-radius: 50%; object-fit: cover; margin-bottom: 12px; border: 2px solid var(--border); }
 
@@ -161,21 +161,21 @@
   .updates-list { display: flex; flex-direction: column; }
   .update-item { display: grid; grid-template-columns: 130px 1fr; border-bottom: 1px solid var(--border); padding: 16px 0; }
   .update-item:last-child { border-bottom: none; }
-  .u-date { font-family: 'JetBrains Mono', monospace; font-size: 13px; color: var(--text-3); padding-right: 16px; border-right: 1px solid var(--border); line-height: 1.4; }
+  .u-date { font-family: 'JetBrains Mono', monospace; font-size: 15px; color: var(--text-3); padding-right: 16px; border-right: 1px solid var(--border); line-height: 1.4; }
   .u-body { padding-left: 20px; }
-  .u-title { font-size: 15px; font-weight: 500; margin-bottom: 4px; }
-  .u-desc { font-size: 14px; color: var(--text-3); margin: 0; }
+  .u-title { font-size: 17px; font-weight: 500; margin-bottom: 4px; }
+  .u-desc { font-size: 16px; color: var(--text-3); margin: 0; }
 
   /* FOOTER */
   footer { background: var(--bg-soft); border-top: 1px solid var(--border); padding: 32px 40px; text-align: center; }
-  footer p { font-size: 14px; color: var(--text-3); margin: 0; }
+  footer p { font-size: 16px; color: var(--text-3); margin: 0; }
   footer a { color: var(--accent); text-decoration: none; }
   footer a:hover { text-decoration: underline; }
 
   /* ABSTRACT TOGGLE */
   .abstract-toggle {
     display: inline-flex; align-items: center; gap: 5px;
-    margin-top: 7px; font-size: 12.5px; font-weight: 500;
+    margin-top: 7px; font-size: 14.5px; font-weight: 500;
     color: var(--accent); background: none; border: none;
     cursor: pointer; padding: 0; font-family: inherit;
     letter-spacing: .01em;
@@ -189,7 +189,7 @@
     display: none; margin-top: 10px; padding: 12px 14px;
     background: var(--bg-soft); border-left: 3px solid var(--border-strong);
     border-radius: 0 6px 6px 0;
-    font-size: 13.5px; color: var(--text-2); line-height: 1.65;
+    font-size: 15.5px; color: var(--text-2); line-height: 1.65;
   }
   .abstract-body.open { display: block; }
 
@@ -509,9 +509,9 @@
   <h2>Relevance to Technical Committees in Distributed Parameter Systems</h2>
   <p>This workshop is supported by:</p>
   <ul style="margin-top:12px; padding-left:20px; display:flex; flex-direction:column; gap:8px;">
-    <li style="color:var(--text-2); font-size:14px;"><strong>IEEE Technical Committee on Distributed Parameter Systems</strong></li>
-    <li style="color:var(--text-2); font-size:14px;"><strong>IFAC Technical Committee on Distributed Parameter Systems</strong></li>
-    <li style="color:var(--text-2); font-size:14px;"><strong>ASME DSCD Technical Committee on Distributed Parameter Systems</strong></li>
+    <li style="color:var(--text-2); font-size: 16px;"><strong>IEEE Technical Committee on Distributed Parameter Systems</strong></li>
+    <li style="color:var(--text-2); font-size: 16px;"><strong>IFAC Technical Committee on Distributed Parameter Systems</strong></li>
+    <li style="color:var(--text-2); font-size: 16px;"><strong>ASME DSCD Technical Committee on Distributed Parameter Systems</strong></li>
   </ul>
 </section>
 
